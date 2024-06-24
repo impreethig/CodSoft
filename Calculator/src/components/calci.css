@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* background-image: url('your-background-image-url.jpg'); Set your background image URL */
+    background: #3a6186;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    background-position: center;
+    
+  }
+  
+  .calci-calculator {
+    /* background-color: rgb(216, 68, 113); */
+    background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);    
+
+    padding: 20px;
+    border: 0.5px solid white;
+    width: 320px;
+    height: 420px;
+  }
+  
+  .calci-display {
+    background-color: #f0f0f0;
+    color: #f0f0f0;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: right;
+    margin-bottom: 20px;
+    height: 80px; /* Reduce height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 0.5px solid palevioletred;
+  }
+  
+  .calci-input {
+    font-size: 0.8em;
+    color: black; /* Set input color to black */
+    word-wrap: break-word;
+    max-height: 3em;
+    overflow: hidden;
+  }
+  
+  .calci-result {
+    font-size: 1.5em;
+    color: black;
+  }
+  
+  .calci-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  button {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 15px; /* Reduce height */
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border: 0.5px solid palevioletred; /* Button border pink */
+    margin: 0.5px; /* Add some margin to buttons */
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
+  .calci-equals {
+    grid-column: span 2;
+    background-color: #80ECEF ;
+    color: #fff;
+  }
+  
+  .calci-equals:hover {
+    background-color: #8BC7C9  ;
+  }
+  
+  .calci-zero {
+    grid-column: span 2;
+  }
